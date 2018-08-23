@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function(){
     if (ballPosition === userGuess) {
       correctGuesses += 1
     }
-    var score = document.createElement('div')
+    var score = document.createElement('p')
     score.id='score'
     gameArea.append(score)
     score=correctGuesses.value
