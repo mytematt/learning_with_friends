@@ -23,3 +23,9 @@
   margin: 50px;
   cursor: pointer;
 }
+
+#score {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+}

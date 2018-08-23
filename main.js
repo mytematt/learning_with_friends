@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-
   //functions
 
   function genBallPosition() {
@@ -30,9 +29,15 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
   function incCounters() {
-    // if correct guess, increment correct guess
-    // if wrong guess, incremenet wrong guess
-    // update scoreboard according
+    numGuesses += 1
+    if (ballPosition === userGuess) {
+      correctGuesses += 1
+    }
+    var score = document.createElement('div')
+    score.id='score'
+    gameArea.append(score)
+    score=correctGuesses.value
+    // update scoreboard
 
   }
 
