@@ -1,0 +1,12 @@
+.container { 
+  display: flex;
+  justify-content: center;
+}
+
+.center { 
+  text-align: center
+}
+
+.hide {
+  display: none;
+}
