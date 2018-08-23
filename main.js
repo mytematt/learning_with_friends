@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function(){
   var correctGuesses = 0
   var ballPosition
   var userGuess
+  var avgAttempt = 0
 
   name.addEventListener('keyup', function(event){
     if (event.target.value !== '') {
@@ -19,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function(){
   })
 
 
-  
-  
+
+
   //functions
 
   function genBallPosition() {
@@ -38,6 +39,8 @@ document.addEventListener("DOMContentLoaded", function(){
   function calcAverage() {
   // worry about this last
   // divide winning from attempted guesses
+  avgAttempt = ((numGuesses / correctGuesses) * 100).toFixed(2)+"%"
+
   }
 
   function makeGuess() {
