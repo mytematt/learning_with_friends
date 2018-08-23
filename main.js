@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   function genBallPosition() {
     // generate winning location
+    ballPosition = Math.floor(Math.random() * 3)
   }
 
   function incCounters() {
